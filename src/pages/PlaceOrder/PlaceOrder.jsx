@@ -1,5 +1,5 @@
 import React from "react";
-import "./Placeorder.css";
+import "./placeorder.css";
 import { Context } from "../../context/Context";
 import { useContext } from "react";
 
