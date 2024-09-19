@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Potta+One&family=Protest+Guerrilla&display=swap');
+
+.header {
+  height: 34vw;
+  margin: 30px auto;
+  background: url("/public/header_img.jpg") center;
+  border-radius: 40px;
+  background-size: cover;
+  position: relative;
+  box-shadow: 0 0 10px black;
+}
+.header-content {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1.5vw;
+  max-width: 50%;
+  bottom: 10%;
+  left: 6vw;
+  animation: fadeIn 3s;
+}
+.header-content h2 {
+  font-weight: 500;
+  color: white;
+  text-shadow: 0 0 5px white;
+  font-size: max(3.8vw, 22px);
+  font-family: "Potta One", system-ui;
+  font-style: normal;
+ 
+ 
+}
+.header-content p {
+  color: rgb(255, 255, 255);
+  font-size: 1vw;
+  text-shadow: 0 0 10px black;
+
+}
+.header-content button {
+  border: none;
+  color: black;
+  font-weight: 500;
+  padding: 1vw 2.3vw;
+  background: white;
+  font-size: max(1vw, 13px);
+  border-radius: 50px;
+}
+
+@media (max-width: 1050px) {
+  .header-content {
+    max-width: 45%;
+  }
+}
+@media (max-width: 750px) {
+  .header-content {
+    max-width: 65%;
+  }
+
+  .header-content button {
+    padding: 2vw 4vw;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    margin-top: 0px;
+    height: 25vh;
+  }
+  .header h2{
+    font-size: 22px;
+  }
+}

@@ -1,0 +1,128 @@
+.navbar {
+  padding: 30px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background: linear-gradient(180deg, #333333, #4b4b4b); */
+}
+.navbar .logo {
+  width: 120px;
+}
+.nav-menu {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  font-size: 18px;
+  color: rgb(0, 0, 0);
+}
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.navbar button {
+  font-size: 16px;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 10px 30px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin: 0px 10px;
+  box-shadow: 1px 1px 5px rgba(138, 138, 138, 0.2);
+  background-image: -webkit-linear-gradient(
+    90deg,
+    #5f5f5f 50%,
+    transparent 50%
+  );
+  background-image: linear-gradient(10deg,   #000000 50%, rgb(158, 158, 158) 50%);
+  background-size: 500px;
+  background-repeat: no-repeat;
+  background-position: 0%;
+  -webkit-transition: background 300ms ease-in-out;
+  transition: background 300ms ease-in-out;
+}
+.navbar button:hover {
+  background-position: 100%;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  color: black;
+}
+.navbar .active {
+  padding-bottom: 2px;
+  border-bottom: 2px solid rgb(0, 0, 0);
+}
+.navbar li {
+  cursor: pointer;
+}
+.nav-search-icon {
+  position: relative;
+}
+.nav-search-icon .dot {
+  position: absolute;
+  min-height: 10px;
+  min-width: 10px;
+  background-color: red;
+  border-radius: 5px;
+  top: -8px;
+  right: -8px;
+}
+@media (max-width:1050px) {
+  .navbar .logo{
+    width: 140px;
+  }
+  .nav-menu{
+    gap: 20px;
+    font-size: 17px;
+  }
+  .nav-right{
+    gap: 30px;
+  }
+  .nav-right img {
+    width: 22px;
+  }
+  .nav-right button{
+    padding: 8px 25px;
+  }
+}
+@media (max-width:900px) {
+  .navbar .logo{
+    width: 120px;
+  }
+  .nav-menu{
+    gap: 15px;
+    font-size: 16px;
+  }
+  .nav-right{
+    gap: 20px;
+  }
+  .nav-right img {
+    width: 20px;
+  }
+  .nav-right button{
+    padding: 7px 20px;
+    font-size: 15px;
+  }
+}
+@media (max-width:750px) {
+  .nav-menu{
+    display: none;
+  }
+  
+}
+@media (max-width:480px) {
+  
+  .navbar .logo{
+    width: 100px;
+  }
+  .navbar .search{
+    display: none;
+  }
+  .navbar button{
+    margin-right: -10px;
+  }
+  .navbar .nav-search-icon{
+    margin-top: 6px;
+    
+  }
+}
