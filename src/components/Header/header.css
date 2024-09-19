@@ -3,7 +3,7 @@
 .header {
   height: 34vw;
   margin: 30px auto;
-  background: url("/public/header_img.jpg") center;
+  background: url("../../assets/header_img.jpg") center;
   border-radius: 40px;
   background-size: cover;
   position: relative;
